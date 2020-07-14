@@ -1,0 +1,83 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  &_time {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.timer > span:last-child {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.select_block {
+  padding: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0px 8px 16px rgba(78, 93, 146, 0.08), 0px 4px 4px rgba(78, 93, 146, 0.16);
+  & .label {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(39, 47, 90, 0.6);
+  }
+  & .wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  & .select {
+    width: 80%;
+    align-self: end;
+  }
+  & .ant-btn-lg {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-style: normal;
+    font-size: 16px;
+  }
+  & .buttons {
+    margin-left: auto;
+  }
+  & .ant-select-selector {
+    padding-left: 24px!important;
+  }
+  & .ant-select-selection-placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    opacity: 1;
+    color: rgba(39, 47, 90, 0.8);
+  }
+}
+.comment {
+  padding-right: 32px;
+  margin-bottom: 50px;
+  &_input {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  & svg {
+    margin-right: 16px;
+  }
+  & textarea {
+    resize: none;
+  }
+  & .buttons {
+    margin-left: 47px;
+  }
+}
+
+.info {
+
+}

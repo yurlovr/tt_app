@@ -1,0 +1,45 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.primary {
+  padding: 8px 24px;
+  font-style: normal;
+  font-size: 16px;
+  color: #ffffff;
+  background: #189EE9;
+  border-radius: 4px;
+  &:hover {
+    background: #40a9ff;
+  }
+  &:active {
+    background: #096dd9;
+  }
+  &[disabled] {
+    background: rgba(39, 47, 90, 0.32);
+  }
+}
+.secondary {
+  padding: 8px 16px;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  background: #189EE9;
+  border-radius: 4px;
+  &:hover {
+    background: #40a9ff;
+  }
+  &:active {
+    background: #096dd9;
+  }
+  &[disabled] {
+    background: rgba(39, 47, 90, 0.32);
+    cursor: default;
+  }
+}

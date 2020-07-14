@@ -27,7 +27,7 @@ const SELECTED_COLOR = '#189EE9'
 
 const App = () => {
   let location = useLocation()
-
+  console.log(location)
   const [selectMenu, setSelectMenu] = useState(location.pathname.replace('/', ''));
 
   let history = useHistory()
@@ -67,23 +67,24 @@ const App = () => {
   }
 
   return (
-  <Layout>
-    <Header className="header">
-      <div className="logo">
-        <TtLogo />
-      </div>
-    </Header>
+  // <Layout className="wrapper">
     <Layout>
-      <Sider width={200} className="site-layout-background">
+      <Sider width={200} className="site-layout-background" theme="light">
+        <div className="logo header">
+          <TtLogo />
+        </div>
         <Menu
           mode="inline"
           defaultSelectedKeys={[selectMenu]}
           style={{ height: '100%', borderRight: 0 }}
+          className="menu"
         >
           {getMenuItem()}
         </Menu>
       </Sider>
-      <Layout style={{ padding: '0 24px 24px' }}>
+      <Layout style={{ padding: '0 24px 24px' }}
+              className="content"
+      >
         {/* <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>List</Breadcrumb.Item>
@@ -92,7 +93,7 @@ const App = () => {
         <Content
           className="site-layout-background"
           style={{
-            padding: 24,
+            padding: 32,
             margin: 0,
             minHeight: 280,
           }}
@@ -124,7 +125,7 @@ const App = () => {
         </Content>
       </Layout>
     </Layout>
-  </Layout>
+  // </Layout>
   );
 }
 
