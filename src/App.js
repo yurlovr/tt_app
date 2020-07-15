@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
-import './App.css';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import './App.scss';
+import { Layout, Menu } from 'antd';
 import { TtLogo } from './components/icons/TtLogo'
 import { CheckIcon } from './components/icons/CheckIcon'
 import { UsersIcon } from './components/icons/UserIcon'
@@ -21,6 +21,7 @@ import {
 } from 'react-router-dom'
 import { Home } from './components/Home/Home'
 import { User } from './components/User/User'
+import { AuthBlock } from './components/AuthBlock/AuthBlock'
 
 const { Content, Sider } = Layout;
 
@@ -28,7 +29,6 @@ const SELECTED_COLOR = '#189EE9'
 
 const App = () => {
   let location = useLocation()
-  console.log(location)
   const [selectMenu, setSelectMenu] = useState(location.pathname.replace('/', ''));
 
   let history = useHistory()
@@ -68,12 +68,12 @@ const App = () => {
   }
 
   return (
-  // <Layout className="wrapper">
     <Layout>
-      <Sider width={200} className="site-layout-background" theme="light">
+      <Sider width={220} className="site-layout-background" theme="light">
         <div className="logo header">
           <TtLogo />
         </div>
+        <AuthBlock />
         <Menu
           mode="inline"
           defaultSelectedKeys={[selectMenu]}
@@ -86,11 +86,6 @@ const App = () => {
       <Layout style={{ padding: '0 24px 24px' }}
               className="content"
       >
-        {/* <Breadcrumb style={{ margin: '16px 0' }}>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb> */}
         <Content
           className="site-layout-background"
           style={{
@@ -100,22 +95,22 @@ const App = () => {
           }}
         >
           <Switch>
-          <Route path="/settings">
+          <Route path="/settings" exact>
             <Settings />
           </Route>
-          <Route path="/object">
+          <Route path="/object" exact>
             <Objects />
           </Route>
-          <Route path="/users">
+          <Route path="/users" exact>
             <Users />
           </Route>
           <Route path="/user/:userId">
             <User />
           </Route>
-          <Route path="/tasks">
+          <Route path="/tasks" exact>
             <Tasks />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
           <Route path="*">
@@ -125,7 +120,6 @@ const App = () => {
         </Content>
       </Layout>
     </Layout>
-  // </Layout>
   );
 }
 

@@ -1,7 +1,9 @@
 import React from 'react'
+import { StepTime } from '../StepTime/StepTime'
+import getStepsTime from '../../libs/getStepsTime'
 import './UserTaskInfo.scss'
 
-export const UserTaskInfo = ({task, stepTime}) => {
+export const UserTaskInfo = ({task}) => {
   console.log(task)
   return (
     <>
@@ -12,6 +14,7 @@ export const UserTaskInfo = ({task, stepTime}) => {
       <p className="description_info">
         {task.taskDescription}
       </p>
+      <StepTime  currentStep={task.currentStep} timeSteps={getStepsTime(task.taskTime)} small/>
     </>
   )
 }

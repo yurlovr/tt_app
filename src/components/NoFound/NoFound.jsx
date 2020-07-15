@@ -1,5 +1,11 @@
 import React from 'react'
+import { BackButton } from '../BackButton/BackButton'
 
 export const NoFound = () => {
-  return <h2>Страницы не найдено</h2>
+  return (
+  <>
+    <BackButton prevPage={"/"} />
+    <h2>Страницы не найдено</h2>
+  </>
+  )
 }

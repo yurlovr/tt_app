@@ -1,58 +1,51 @@
 import React, { useEffect, useState } from 'react'
+import moment from 'moment'
 import 'antd/dist/antd.css'
 import './Tasks.scss'
 import { Row, Col, Progress,  Input } from 'antd'
 import { TaskSteps } from '../TaskSteps/TaskSteps'
-import { TimerIcon } from '../icons/TimerIcon'
+import { BackButton } from '../BackButton/BackButton'
 import { PersonIcon } from '../icons/PersonIcon'
 import { CustomSelect } from '../CustomSelect/CustomSelect'
 import { InfoTask } from '../InfoTask/InfoTask'
 import { Button } from '../Button/Button'
 import { EXPERT } from '../../const/expert'
 import { Data } from '../../const/tasks'
+import { StepTime } from '../StepTime/StepTime'
 import getTaskTime  from '../../libs/getTaskTime'
-import moment from 'moment'
+import getStepsTime from '../../libs/getStepsTime'
+
 
 const { TextArea } = Input;
 const FORMAT = "DD.MM.YYYY hh:mm"
 
 export const Tasks = () => {
-  const stepsTime = (task) => {
-    const oneStep = Math.floor(task.taskTime / 3)
-    const twoStep = Math.floor(task.taskTime / 3)
-    const threeStep = task.taskTime - oneStep - twoStep
-    return {
-      oneStep,
-      twoStep,
-      threeStep
-    }
-  }
+
   const [currentTask, setCurrentTask] = useState('')
-  const [timeSteps, setTimeSteps] = useState('')
   const [percent, setTimePercent] = useState('')
+
   useEffect(() => {
     setCurrentTask(Data[0])
   },[])
   useEffect(() => {
     setCurrentTask(Data[0])
     function setTime (task) {
-      const steps = stepsTime(task)
       const currentDate = moment()
       const createdDate = moment(task.taskCreated, FORMAT)
       setTimePercent((currentDate.diff(createdDate, 'hours') * 100) / task.taskTime)
-      setTimeSteps(steps)
     }
     setTime(currentTask)
   }, [currentTask])
   return (
     <>
+    <BackButton prevPage="/" />
     <h2>{currentTask.task}</h2>
     <Row>
       <Col span={20}>
-        <p>{currentTask.taskDescription}</p>
+        <p className="task_description">{currentTask.taskDescription}</p>
       </Col>
       <Col span={4} className="center">
-        <p>Время на задачу</p>
+        <p className="task_description">Время на задачу</p>
       </Col>
     </Row>
     <Row>
@@ -68,16 +61,7 @@ export const Tasks = () => {
         <p>{getTaskTime(currentTask.taskTime)}</p>
       </Col>
       </Row>
-      <Row>
-        <Col span={24}>
-          <div className="timer">
-            <span>
-              <TimerIcon />
-            </span>
-            <span>Время на этап: {getTaskTime(timeSteps.oneStep)}</span>
-          </div>
-        </Col>
-      </Row>
+      <StepTime timeSteps={getStepsTime(currentTask.taskTime)} currentStep={currentTask.currentStep} />
     <Row>
       <Col span={24}>
         <div className="select_block">

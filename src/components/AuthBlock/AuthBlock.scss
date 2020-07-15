@@ -1,0 +1,41 @@
+.auth {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+  background: #f3f5f6;
+  & span {
+    display: block;
+  }
+  &_user {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #272F5A;
+  }
+}
+
+.block {
+  padding: 0 50px;
+  background: #f3f5f6;
+}
+
+.company_auth {
+  margin: 0;
+  padding-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(39, 47, 90, 0.6);
+}
+
+.exit_auth {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #272F5A;
+}

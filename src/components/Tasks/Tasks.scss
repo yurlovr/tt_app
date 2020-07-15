@@ -4,15 +4,20 @@
   &_time {
     display: flex;
     justify-content: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(39, 47, 90, 0.8);
   }
 }
 
-.timer > span:last-child {
-  margin-left: 10px;
+.task_description {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  color: rgba(39, 47, 90, 0.6);
 }
 
 .center {
@@ -76,8 +81,4 @@
   & .buttons {
     margin-left: 47px;
   }
-}
-
-.info {
-
 }

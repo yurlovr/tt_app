@@ -5,6 +5,7 @@ import { EllipsisBtnIcon } from '../icons/EllipsisBtnIcon'
 import { Row, Col } from 'antd'
 import { InfoTask } from '../InfoTask/InfoTask'
 import { UserTaskInfo } from '../UserTaskInfo/UserTaskInfo'
+import { BackButton } from '../BackButton/BackButton'
 import { Data } from '../../const/tasks'
 import './User.scss'
 
@@ -17,6 +18,7 @@ export const User = () => {
   },[userId])
   return (
     <>
+      <BackButton prevPage={"/users"} />
       <Row className="row">
         <Col span={22}>
           <h2 className="user_header">{selectedUser.name}</h2>
@@ -40,9 +42,7 @@ export const User = () => {
         </section>
       </Col>
       <Col flex="0 1 300px">
-        <UserTaskInfo task={Data.find(t => t.userId = userId)}
-                      stepTime={'Время на этап: 14д. 12 ч.'}
-        />
+        <UserTaskInfo task={Data.find(t => t.userId = userId)}/>
       </Col>
     </Row>
     </>
