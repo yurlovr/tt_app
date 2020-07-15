@@ -16,12 +16,13 @@ import { NoFound } from './components/NoFound/NoFound'
 import {
   Route,
   Switch,
-  Redirect,
   useHistory,
   useLocation
 } from 'react-router-dom'
+import { Home } from './components/Home/Home'
+import { User } from './components/User/User'
 
-const { Header, Content, Sider } = Layout;
+const { Content, Sider } = Layout;
 
 const SELECTED_COLOR = '#189EE9'
 
@@ -108,15 +109,14 @@ const App = () => {
           <Route path="/users">
             <Users />
           </Route>
+          <Route path="/user/:userId">
+            <User />
+          </Route>
           <Route path="/tasks">
             <Tasks />
           </Route>
           <Route path="/">
-            <Redirect
-              to={{
-                pathname: "/tasks",
-              }}
-            />
+            <Home />
           </Route>
           <Route path="*">
             <NoFound />

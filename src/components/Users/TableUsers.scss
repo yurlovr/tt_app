@@ -1,0 +1,27 @@
+.icon {
+  margin-left: 20px;
+}
+.col_user {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: #272F5A;
+}
+.ant-table-tbody > tr > td {
+  transition: none;
+}
+.row {
+  background: #ffffff;
+  &:hover {
+    & > td {
+      box-shadow: 3px 9px 4px rgba(78, 93, 146, 0.16);
+    }
+  }
+  & .col_button > svg {
+    cursor: pointer;
+  }
+}
+.ant-table-tbody > tr.ant-table-row:hover > td {
+  background: #ffffff;
+}

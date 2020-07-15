@@ -3,9 +3,10 @@ import 'antd/dist/antd.css';
 import './CustomSelect.scss';
 import { Select } from 'antd';
 
+
 const { Option } = Select;
 
-export const CustomSelect = ({placeholder}) => {
+export const CustomSelect = ({placeholder, options, size, defaultValue, icon, width, showSearch}) => {
 
   const onChange = (value) => {
     console.log(`selected ${value}`)
@@ -19,27 +20,39 @@ export const CustomSelect = ({placeholder}) => {
     console.log('onFocus');
   }
 
-  const  onSearch = (val) => {
-  console.log('search:', val);
+const renderExpert = () => {
+  return  options.map(e => {
+    if (icon) {
+      return (
+        <Option value={e.name} key={e.id}>
+          <span className="icon_select">
+            {icon}
+          </span>
+          {e.name}
+        </Option>
+      )
+    } else {
+      return (
+        <Option value={e.name} key={e.id}>{e.name}</Option>
+      )
+    }
+  }
+
+  )
 }
   return (
     <Select
-    showSearch
-    style={{ minWidth: '98%' }}
-    optionFilterProp="children"
-    onChange={onChange}
-    onFocus={onFocus}
-    onBlur={onBlur}
-    onSearch={onSearch}
-    placeholder={placeholder}
-    filterOption={(input, option) =>
-      option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-    }
-    size="large"
-  >
-    <Option value="jack">Jack</Option>
-    <Option value="lucy">Lucy</Option>
-    <Option value="tom">Tom</Option>
-  </Select>
+      showSearch={showSearch}
+      style={{ minWidth: width }}
+      optionFilterProp="children"
+      onChange={onChange}
+      onFocus={onFocus}
+      onBlur={onBlur}
+      placeholder={placeholder}
+      size={size}
+      defaultValue={defaultValue && defaultValue}
+    >
+      {renderExpert()}
+    </Select>
   );
 }

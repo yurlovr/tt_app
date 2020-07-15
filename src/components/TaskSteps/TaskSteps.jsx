@@ -6,7 +6,7 @@ import { FinishIcon } from '../icons/FinishIcon'
 
 const { Step } = Steps
 
-export const TaskSteps = () => {
+export const TaskSteps = ({currentStep}) => {
 
   const renderStep = () => {
     return STEPS.map((step, index) => {
@@ -22,7 +22,7 @@ export const TaskSteps = () => {
   return (
     <>
       <h2>Этапы выполнения</h2>
-      <Steps direction="vertical" current={0} size="small">
+      <Steps direction="vertical" current={currentStep - 1} size="small">
         {renderStep()}
       </Steps>
     </>

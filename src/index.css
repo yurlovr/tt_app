@@ -1,13 +1,18 @@
+@font-face {
+	font-family: 'PTRootUIWebRegular';
+	src:url('./fonts/PT\ Root\ UI_Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: PT Root UI;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  font-family: 'PTRootUIWebRegular';
 }
 
 p {

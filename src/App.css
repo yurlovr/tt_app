@@ -14,3 +14,11 @@
 .menu {
   background: #F3F5F6;
 }
+h2 {
+  /* font-family: PT Root UI; */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 48px;
+  color: #272F5A;
+}
