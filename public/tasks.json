@@ -1,0 +1,114 @@
+[
+  {
+    "task": "Назначить сотрудника для проведения внеплановой проверки",
+    "taskId": "b8a6a",
+    "taskDescription": "Не корректные показания",
+    "taskTime": 876,
+    "taskCreated":"10.07.2020 10:38",
+    "userId": "b8a6b",
+    "currentStep": 1,
+    "expert": "",
+    "info": [
+    {
+      "key": "b8a6a1",
+      "property": "Причина задачи",
+      "desctiption": "Малое потребление холодной воды"
+    },
+    {
+      "key": "b8a6a2",
+      "property": "Номер задачи",
+      "desctiption": "123"
+    },
+    {
+      "key":"b8a6a3",
+      "property": "Дата создания",
+      "desctiption": "10.07.2020 10:38"
+    },
+    {
+      "key": "b8a6a4",
+      "property": "Адрес",
+      "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+      "bold": true
+    },
+    {
+      "key": "b8a6a5",
+      "property": "Комментарий к квартире",
+      "desctiption": "ПЛАН ЖКХ-9 ОТ 10,09,17 СЧ.ИСПР!!!! план ИЦ 10.04.18 сч.испр"
+    },
+    {
+      "key": "b8a6a6",
+      "property": "Теги к квартире",
+      "desctiption": [
+        {
+          "key": "b8a6a7",
+          "tags": "Бабка",
+          "negative": false
+        },
+        {
+          "key": "b8a6a8",
+          "tags": "Любит скандалить",
+          "negative": false
+        },
+        {
+          "key": "b8a6a9",
+          "tags": "2 недопуска",
+          "negative": true
+        }
+    ]
+    },
+    {
+      "key": "b8a6a10",
+      "property": "Собственник 1",
+      "desctiption": "Константинопольский К.К.",
+      "bold": true
+    },
+    {
+      "key": "b8a6a11",
+      "property": "Статус собственника 1",
+      "desctiption": "Передает показания"
+    },
+    {
+      "key": "b8a6a12",
+      "property": "Юридическое состояние",
+      "desctiption": "Физическое лицо"
+    },
+    {
+      "key": "b8a6a13",
+      "property": "Номер ЛС собственника 1",
+      "desctiption": "123456789"
+    },
+    {
+      "key": "b8a6a14",
+      "property": "Контактный номер телефона",
+      "desctiption": "+7 999 999-99-99"
+    },
+    {
+      "key": "b8a6a15",
+      "property": "Собственник 2",
+      "desctiption": "Иванова К.С.",
+      "bold": true
+    },
+    {
+      "key": "b8a6a16",
+      "property": "Статус собственника 2",
+      "desctiption": "Передает показания"
+    },
+    {
+      "key": "b8a6a17",
+      "property": "Юридическое состояние",
+      "desctiption": "Физическое лицо"
+    },
+    {
+      "key": "b8a6a18",
+      "property": "Номер ЛС собственника 2",
+      "desctiption": "123456789"
+    },
+    {
+      "key": "b8a6a19",
+      "property": "Контактный номер телефона ",
+      "desctiption": "+7 999 999-99-99"
+    }
+  ],
+  "comment": []
+  }
+]

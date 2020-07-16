@@ -6,8 +6,7 @@ import './StepTime.scss'
 
 const classNames = require('classnames');
 
-export const StepTime = ({currentStep, timeSteps, small}) => {
-  console.log(timeSteps)
+function StepTimeFunc ({currentStep, timeSteps, small}) {
   const getCurrentStepTime = (steps, currentStep) => {
     switch (currentStep) {
       case 1: return steps.oneStep
@@ -29,3 +28,5 @@ export const StepTime = ({currentStep, timeSteps, small}) => {
     </Row>
   )
 }
+
+export const StepTime = React.memo(StepTimeFunc)

@@ -6,11 +6,7 @@ import { Select } from 'antd';
 
 const { Option } = Select;
 
-export const CustomSelect = ({placeholder, options, size, defaultValue, icon, width, showSearch}) => {
-
-  const onChange = (value) => {
-    console.log(`selected ${value}`)
-  }
+export const CustomSelect = ({placeholder, options, size, defaultValue, icon, width, showSearch, onChange, value}) => {
 
   const onBlur = () => {
     console.log('blur');
@@ -50,6 +46,7 @@ const renderExpert = () => {
       onBlur={onBlur}
       placeholder={placeholder}
       size={size}
+      value={value}
       defaultValue={defaultValue && defaultValue}
     >
       {renderExpert()}

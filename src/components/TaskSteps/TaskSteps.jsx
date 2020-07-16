@@ -14,7 +14,8 @@ export const TaskSteps = ({currentStep}) => {
         <Step description={step.title}
               key={step.id}
               id={step.id}
-              icon={ index === STEPS.length - 1 ? <FinishIcon/>  : null}/>
+              icon={ index === STEPS.length - 1 ? <FinishIcon/>  : null}
+        />
       )
     })
   }

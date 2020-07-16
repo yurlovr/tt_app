@@ -4,7 +4,6 @@ import getStepsTime from '../../libs/getStepsTime'
 import './UserTaskInfo.scss'
 
 export const UserTaskInfo = ({task}) => {
-  console.log(task)
   return (
     <>
       <h2 className="header_info">Связанные задачи</h2>

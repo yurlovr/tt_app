@@ -1,0 +1,29 @@
+.no_comment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgba(39, 47, 90, 0.6);
+  & span {
+    display: block;
+  }
+  & > span:last-child {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .comment_info{
+    position: absolute;
+    display: flex;
+    top: -20%;
+    left: 10%;
+    & .name {
+      margin-right: 20px;
+      font-weight: 600;
+    }
+  }
+  & .comment_text {
+    padding-top: 15px;
+  }
+}
