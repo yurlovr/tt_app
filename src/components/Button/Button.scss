@@ -22,6 +22,7 @@ button {
     background: #096dd9;
   }
   &[disabled] {
+    cursor: default;
     background: rgba(39, 47, 90, 0.32);
   }
 }

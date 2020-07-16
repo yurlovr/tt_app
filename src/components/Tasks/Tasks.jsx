@@ -1,5 +1,7 @@
-import React, {useState, useCallback } from 'react'
+import React, {useState, useCallback, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import useFetch from '../../hooks/useFetch'
+import useShallowEqualSelector from '../../hooks/useShallowEqualSelector'
 import moment from 'moment'
 import 'antd/dist/antd.css'
 import './Tasks.scss'
@@ -16,8 +18,6 @@ import { StepTime } from '../StepTime/StepTime'
 import getTaskTime  from '../../libs/getTaskTime'
 import getStepsTime from '../../libs/getStepsTime'
 import { setAllTasks, setCurrentTask, setComment, setExpert } from  '../../store/actions/actionsTask'
-import useFetch from '../../hooks/useFetch'
-import useShallowEqualSelector from '../../hooks/useShallowEqualSelector'
 import { TASK_ID } from '../../const/tasks'
 
 
@@ -26,12 +26,16 @@ const FORMAT = "DD.MM.YYYY hh:mm"
 
 export const Tasks = () => {
 
+  const dispatch = useDispatch()
   const [inputValue, setInputValue] = useState('')
-  const currentTask = useShallowEqualSelector(state => state.tasksState.currentTask)
-  const [taskExpert, setTaskExpert] = useState(currentTask.expert)
-  const dispatch = useDispatch();
-  const { response } = useFetch('./tasks.json', null)
+  const { response } = useFetch('./tasks.json', null, 'tasks')
 
+  const currentTask = useShallowEqualSelector(state => state.tasksState.currentTask)
+    useEffect(() => {
+      dispatch(setAllTasks(response))
+      dispatch(setCurrentTask(TASK_ID))
+    },[dispatch, response])
+  const [taskExpert, setTaskExpert] = useState(currentTask.expert)
     /*
     В реальном проекте, на странице всех задач - получаем массив объектов задач с id задачи и необходимым описанием
     далее нажимаем на карточку задачи,делаем запрос по конкретному id, получаем конкретную задачу
@@ -42,11 +46,6 @@ export const Tasks = () => {
     В реальном проекте, при добавлении коментария, данные задачи должны отправлятся на сервер, затем,
     при повторном монтировании этого компонента, задача должна прилететь с сохраненным коментарием.
   */
-
-  if (!Object.keys(currentTask).length) {
-    dispatch(setAllTasks(response))
-    dispatch(setCurrentTask(TASK_ID))
-  }
 
   const setTimePercent = (task) => {
       const currentDate = moment()
@@ -67,8 +66,10 @@ export const Tasks = () => {
     setInputValue('')
   }, [inputValue, dispatch])
 
+
   const saveExpert = useCallback(() => {
     dispatch(setExpert(taskExpert))
+    dispatch(setComment(`Назначен исполнитель - ${taskExpert}`))
   },[taskExpert, dispatch])
 
   return (
@@ -112,11 +113,13 @@ export const Tasks = () => {
                               showSearch
                               onChange={changeExpert}
                               value={taskExpert}
+                              disabled={!!currentTask.expert}
               />
             </div>
             <div className="buttons">
               <Button type="primary"
                       onClick={saveExpert}
+                      disabled={!!currentTask.expert}
               >
                 Завершить этап
               </Button>

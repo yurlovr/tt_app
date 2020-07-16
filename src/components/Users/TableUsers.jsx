@@ -13,7 +13,7 @@ export const TableUsers = ({users}) => {
       dataIndex: 'name',
       key: 'name',
       render: (text, record) => {
-        return record.hasTask ? (
+        return record.openTasks.length ? (
         <>
           <strong>{text}</strong>
           <span className="icon">

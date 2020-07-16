@@ -3,17 +3,30 @@ import { StepTime } from '../StepTime/StepTime'
 import getStepsTime from '../../libs/getStepsTime'
 import './UserTaskInfo.scss'
 
-export const UserTaskInfo = ({task}) => {
+export const UserTaskInfo = ({tasks}) => {
+  if (!tasks) return null
+
+  const mapTasks = () => {
+    return tasks.map(t => {
+      return (
+        <li key={t.taskId}>
+          <p className="task_info">
+            {t.task}
+          </p>
+          <p className="description_info">
+            {t.taskDescription}
+          </p>
+          <StepTime  currentStep={t.currentStep} timeSteps={getStepsTime(t.taskTime)} small/>
+        </li>
+      )
+    })
+  }
   return (
-    <>
+    <div>
       <h2 className="header_info">Связанные задачи</h2>
-      <p className="task_info">
-        {task.task}
-      </p>
-      <p className="description_info">
-        {task.taskDescription}
-      </p>
-      <StepTime  currentStep={task.currentStep} timeSteps={getStepsTime(task.taskTime)} small/>
-    </>
+      <ul>
+        {mapTasks()}
+      </ul>
+    </div>
   )
 }

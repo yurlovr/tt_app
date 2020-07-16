@@ -1,21 +1,26 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { USERS } from '../../const/users'
+import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
+import useShallowEqualSelector from '../../hooks/useShallowEqualSelector'
+import { setCurrentUser } from '../../store/actions/actionsUsers'
 import { EllipsisBtnIcon } from '../icons/EllipsisBtnIcon'
 import { Row, Col } from 'antd'
 import { InfoTask } from '../InfoTask/InfoTask'
 import { UserTaskInfo } from '../UserTaskInfo/UserTaskInfo'
 import { BackButton } from '../BackButton/BackButton'
-import { Data } from '../../const/tasks'
 import './User.scss'
 
 export const User = () => {
   const { userId } = useParams()
-  const [selectedUser, setSelectedUser] = useState('');
+  const dispatch = useDispatch()
+  const users = useShallowEqualSelector(state => state.usersState.users)
+  const selectedUser = useShallowEqualSelector(state => state.usersState.currentUser)
+
   useEffect(() => {
-    const user = USERS.find(u => u.key === userId)
-    setSelectedUser(user)
-  },[userId])
+    dispatch(setCurrentUser(userId))
+  },[userId, dispatch, users])
+
   return (
     <>
       <BackButton prevPage={"/users"} />
@@ -24,7 +29,9 @@ export const User = () => {
           <h2 className="user_header">{selectedUser.name}</h2>
         </Col>
         <Col span={2} className="user_header-btn">
-          <EllipsisBtnIcon width='48px' height='48px' />
+          <Link to={`/update/${selectedUser.key}`}>
+            <EllipsisBtnIcon width='48px' height='48px' />
+          </Link>
         </Col>
       </Row>
       <Row className="row row_data">
@@ -42,7 +49,7 @@ export const User = () => {
         </section>
       </Col>
       <Col flex="0 1 300px">
-        <UserTaskInfo task={Data.find(t => t.userId = userId)}/>
+        <UserTaskInfo tasks={selectedUser.openTasks}/>
       </Col>
     </Row>
     </>

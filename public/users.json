@@ -1,0 +1,769 @@
+[
+  {
+    "key": "b8a6b",
+    "openTasks": [
+      {
+        "taskId": "b8a6a",
+        "task": "Назначить сотрудника для проведения внеплановой проверки",
+        "taskDescription": "Не корректные показания",
+        "currentStep": 1,
+        "taskTime": 56
+      },
+      {
+        "taskId": "b8a6",
+        "task": "Назначить сотрудника для проведения внеплановой проверки",
+        "taskDescription": "Не корректные показания",
+        "currentStep": 1,
+        "taskTime": 560
+      }
+    ],
+    "name": "Константинопольский К.К.",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "hasTask": true,
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Константинопольский"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "К."
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "К."
+      },
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user1",
+    "name": "Иванова О.Б.",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+        "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user2",
+    "name": "Васильев С.Т.",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+        "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user3",
+    "name": "Ватутина К.К.",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "hasButton": true,
+    "openTasks": [
+      {
+        "taskId": "b8a6",
+        "task": "Назначить сотрудника для проведения внеплановой проверки",
+        "taskDescription": "Не корректные показания",
+        "currentStep": 1,
+        "taskTime": 560
+      }
+    ],
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user4",
+    "name": "Безбородов К.В",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user5",
+    "name": "Козырев Николай Илларионович",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user6",
+    "name": "Герасимов Емельян Вадимович",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user7",
+    "name": "Алексеев Жерар Анатолиевич",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user8",
+    "name": "Пархоменко Афанасий Виталиевич",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user9",
+    "name": "Кириллов Устин Виталиевич",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user10",
+    "name": "Червоний Платон Валерьевич",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user11",
+    "name": "Шестаков Спартак Платонович",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user12",
+    "name": "Соболев Цезарь Артёмович",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  },
+  {
+    "key": "user13",
+    "name": "Гришин Яромир Викторович",
+    "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
+    "account": "123456789",
+    "openTasks": [],
+    "hasButton": true,
+    "info": [
+      {
+        "key": "qwe",
+        "property": "Адрес проживания",
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
+        "bold": true
+      },
+      {
+        "key": "qwe1",
+        "property": "Контактный телефон",
+        "desctiption": "+7 888 888-88-883"
+      },
+      {
+        "key":"qwe2",
+        "property": "Электронная почта",
+        "desctiption": "qwerty@yandex.ru",
+        "bold": true
+      },
+      {
+        "key": "qwe3",
+        "property": "Номер лицевого счета",
+        "desctiption": "123456789"
+      },
+      {
+        "key": "qwe4",
+        "property": "Юридическая форма",
+        "desctiption": "Физическое лицо"
+      },
+      {
+        "key": "qwe5",
+        "property": "Платежный код",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe6",
+        "property": "Передает показания",
+        "desctiption": "1234567890"
+      },
+      {
+        "key": "qwe7",
+        "property": "Вид рассчета",
+        "desctiption": "по ИПУ"
+      }
+    ]
+  }
+]

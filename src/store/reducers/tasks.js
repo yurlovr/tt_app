@@ -1,5 +1,6 @@
 import { TASKS } from '../actions/actions'
 import { getRandomId } from '../../libs/getRandomId'
+import { setStorage } from '../../libs/localStorage'
 import moment from 'moment'
 
 export const tasksState = (state = {}, action) => {
@@ -30,6 +31,7 @@ export const tasksState = (state = {}, action) => {
           }
           return t
         })
+        setStorage('tasks', tasks)
         return { ...state, tasks, currentTask}
       }
     case TASKS.SET_EXPERT: {
@@ -44,6 +46,7 @@ export const tasksState = (state = {}, action) => {
         }
         return t
       })
+      setStorage('tasks',tasks)
       return { ...state, tasks, currentTask}
     }
 

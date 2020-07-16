@@ -5,4 +5,8 @@ export const initialState = {
     timePersent: {},
     taskNotExist: false
   },
+  usersState: {
+    users: [],
+    currentUser: {}
+  }
 }

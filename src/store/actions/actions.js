@@ -4,3 +4,8 @@ export const TASKS = {
   SET_COMMENT: 'SET_COMMENT',
   SET_EXPERT: 'SET_EXPERT'
 }
+
+export const USERS = {
+  SET_ALL_USERS: 'SET_ALL_USERS',
+  SET_CURRENT_USER: 'SET_CURRENT_USER'
+}

@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import 'antd/dist/antd.css';
-import './App.scss';
-import { Layout, Menu } from 'antd';
+import React, { useState } from 'react'
+import useShallowEqualSelector from './hooks/useShallowEqualSelector'
+import 'antd/dist/antd.css'
+import './App.scss'
+import { Layout, Menu } from 'antd'
 import { TtLogo } from './components/icons/TtLogo'
 import { CheckIcon } from './components/icons/CheckIcon'
 import { UsersIcon } from './components/icons/UserIcon'
@@ -13,11 +14,13 @@ import { Users } from './components/Users/Users'
 import { Objects } from './components/Objects/Objects'
 import { Settings } from './components/Settings/Settings'
 import { NoFound } from './components/NoFound/NoFound'
+import { UpdateUser } from './components/UpdateUser/UpdateUser'
 import {
   Route,
   Switch,
   useHistory,
-  useLocation
+  useLocation,
+  Redirect
 } from 'react-router-dom'
 import { Home } from './components/Home/Home'
 import { User } from './components/User/User'
@@ -29,7 +32,8 @@ const SELECTED_COLOR = '#189EE9'
 
 const App = () => {
   let location = useLocation()
-  const [selectMenu, setSelectMenu] = useState(location.pathname.replace('/', ''));
+  const [selectMenu, setSelectMenu] = useState(location.pathname.replace('/', ''))
+  const users = useShallowEqualSelector(state => state.usersState.users)
 
   let history = useHistory()
 
@@ -105,7 +109,10 @@ const App = () => {
             <Users />
           </Route>
           <Route path="/user/:userId">
-            <User />
+            {!users || !users.length ? <Redirect to="/" /> : <User />}
+          </Route>
+          <Route path="/update/:userId">
+            {!users || !users.length ? <Redirect to="/" /> : <UpdateUser />}
           </Route>
           <Route path="/tasks" exact>
             <Tasks />

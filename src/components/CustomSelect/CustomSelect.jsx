@@ -1,20 +1,12 @@
-import React from 'react';
-import 'antd/dist/antd.css';
-import './CustomSelect.scss';
-import { Select } from 'antd';
-
+import React from 'react'
+import 'antd/dist/antd.css'
+import './CustomSelect.scss'
+import { Select } from 'antd'
+import { DownArrowIcon } from '../icons/DownArrowIcon'
 
 const { Option } = Select;
 
-export const CustomSelect = ({placeholder, options, size, defaultValue, icon, width, showSearch, onChange, value}) => {
-
-  const onBlur = () => {
-    console.log('blur');
-  }
-
-  const onFocus = () => {
-    console.log('onFocus');
-  }
+export const CustomSelect = ({placeholder, options, size, defaultValue, icon, width, showSearch, onChange, value, disabled}) => {
 
 const renderExpert = () => {
   return  options.map(e => {
@@ -42,12 +34,12 @@ const renderExpert = () => {
       style={{ minWidth: width }}
       optionFilterProp="children"
       onChange={onChange}
-      onFocus={onFocus}
-      onBlur={onBlur}
       placeholder={placeholder}
       size={size}
       value={value}
       defaultValue={defaultValue && defaultValue}
+      disabled={disabled}
+      suffixIcon={<DownArrowIcon />}
     >
       {renderExpert()}
     </Select>
