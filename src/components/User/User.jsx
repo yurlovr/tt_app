@@ -53,7 +53,7 @@ export const User = () => {
         </Col>
         <Col span={2} className="user_header-btn">
           <div className={classNames(showToolTip ? "tool_tip" : "tool_tip-close")}>
-            Редкатировать
+            Редактировать
           </div>
           <Link to={`/update/${selectedUser.key}`} onMouseEnter={show}>
             <EllipsisBtnIcon width='48px' height='48px' />
