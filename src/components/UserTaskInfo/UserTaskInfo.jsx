@@ -16,7 +16,7 @@ export const UserTaskInfo = ({tasks}) => {
           <p className="description_info">
             {t.taskDescription}
           </p>
-          <StepTime  currentStep={t.currentStep} timeSteps={getStepsTime(t.taskTime)} small/>
+          <StepTime  currentStep={t.currentStep} timeSteps={getStepsTime(t.taskTime)} taskCreated={t.taskCreated} small/>
         </li>
       )
     })

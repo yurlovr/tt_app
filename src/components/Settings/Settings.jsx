@@ -1,5 +1,9 @@
 import React from 'react'
 
 export const Settings = () => {
-  return <h2>Настройки</h2>
+  return (
+    <div className="max_height">
+      <h2>Настройки</h2>
+    </div>
+  )
 }

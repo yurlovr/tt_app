@@ -2,3 +2,36 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+.edit_block {
+
+    & .label {
+      margin-bottom: 10px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(39, 47, 90, 0.6);
+    }
+    & .wrapper {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    & input, .ant-select {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 32px;
+      color: rgba(39, 47, 90, 0.8);
+    }
+    &-buttons {
+      margin-top: 20px;
+      & button:first-child {
+        margin-right: 20px;
+      }
+    }
+    & .error {
+      border: 1px solid red;
+    }
+}

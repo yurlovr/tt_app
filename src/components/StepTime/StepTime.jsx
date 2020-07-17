@@ -6,7 +6,7 @@ import './StepTime.scss'
 
 const classNames = require('classnames');
 
-function StepTimeFunc ({currentStep, timeSteps, small}) {
+function StepTimeFunc ({currentStep, timeSteps, taskCreated, small}) {
   const getCurrentStepTime = (steps, currentStep) => {
     switch (currentStep) {
       case 1: return steps.oneStep
@@ -22,7 +22,7 @@ function StepTimeFunc ({currentStep, timeSteps, small}) {
           <span>
             <TimerIcon small/>
           </span>
-          <span>Время на этап: {getTaskTime(getCurrentStepTime(timeSteps, currentStep))}</span>
+          <span>Время на этап: {getTaskTime(getCurrentStepTime(timeSteps, currentStep), taskCreated)}</span>
         </div>
       </Col>
     </Row>

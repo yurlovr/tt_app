@@ -29,17 +29,16 @@ const renderExpert = () => {
   )
 }
   return (
-    <Select
-      showSearch={showSearch}
-      style={{ minWidth: width }}
-      optionFilterProp="children"
-      onChange={onChange}
-      placeholder={placeholder}
-      size={size}
-      value={value}
-      defaultValue={defaultValue && defaultValue}
-      disabled={disabled}
-      suffixIcon={<DownArrowIcon />}
+    <Select showSearch={showSearch}
+            style={{ minWidth: width }}
+            optionFilterProp="children"
+            onChange={onChange}
+            placeholder={placeholder}
+            size={size}
+            value={value}
+            defaultValue={defaultValue && defaultValue}
+            disabled={disabled}
+            suffixIcon={<DownArrowIcon />}
     >
       {renderExpert()}
     </Select>

@@ -1,8 +1,8 @@
-import React from 'react';
-import 'antd/dist/antd.css';
+import React from 'react'
+import 'antd/dist/antd.css'
 import './InfoTask.scss'
-import { Table, Tag } from 'antd';
-// import { Data } from '../../const/tasks'
+import { Table, Tag } from 'antd'
+import { BOLD_PROPS } from '../../const/tasks'
 
 export const InfoTask = ({data}) => {
 
@@ -25,7 +25,8 @@ export const InfoTask = ({data}) => {
             )
           })
         } else {
-          return record.bold ? <strong>{text}</strong> : text
+          return  BOLD_PROPS.some(prop => record.property.toLowerCase().includes(prop) && record.property.split(' ').length <= 2) ?
+                  <strong>{text}</strong> : text
         }
       }
     },
@@ -35,6 +36,8 @@ export const InfoTask = ({data}) => {
     <Table  pagination={false}
             showHeader={false}
             columns={columns}
-            dataSource={data} />
+            dataSource={data}
+            rowClassName={() => "row_style"}
+    />
   )
 }

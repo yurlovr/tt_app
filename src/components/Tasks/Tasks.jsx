@@ -36,16 +36,6 @@ export const Tasks = () => {
       dispatch(setCurrentTask(TASK_ID))
     },[dispatch, response])
   const [taskExpert, setTaskExpert] = useState(currentTask.expert)
-    /*
-    В реальном проекте, на странице всех задач - получаем массив объектов задач с id задачи и необходимым описанием
-    далее нажимаем на карточку задачи,делаем запрос по конкретному id, получаем конкретную задачу
-    и отображаем ее в компоненте
-    Тут id задачи захардкорен, его можно получить например из useLocation
-    При каждом монтировании компонента идет запрос всех задач, но условие ниже не обновляет стор,
-    так как тогда будyт теряться комменарии...
-    В реальном проекте, при добавлении коментария, данные задачи должны отправлятся на сервер, затем,
-    при повторном монтировании этого компонента, задача должна прилететь с сохраненным коментарием.
-  */
 
   const setTimePercent = (task) => {
       const currentDate = moment()
@@ -68,6 +58,7 @@ export const Tasks = () => {
 
 
   const saveExpert = useCallback(() => {
+    if (!taskExpert) return
     dispatch(setExpert(taskExpert))
     dispatch(setComment(`Назначен исполнитель - ${taskExpert}`))
   },[taskExpert, dispatch])
@@ -97,7 +88,7 @@ export const Tasks = () => {
         <p>{getTaskTime(currentTask.taskTime)}</p>
       </Col>
       </Row>
-      <StepTime timeSteps={getStepsTime(currentTask.taskTime)} currentStep={currentTask.currentStep} />
+      <StepTime timeSteps={getStepsTime(currentTask.taskTime)} currentStep={currentTask.currentStep} taskCreated={currentTask.taskCreated}/>
     <Row>
       <Col span={24}>
         <div className="select_block">

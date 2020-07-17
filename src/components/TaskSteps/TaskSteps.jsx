@@ -1,5 +1,6 @@
 import React from 'react'
 import 'antd/dist/antd.css'
+import './TaskSteps.scss'
 import { Steps } from 'antd'
 import { STEPS } from '../../const/steps'
 import { FinishIcon } from '../icons/FinishIcon'
@@ -23,7 +24,9 @@ export const TaskSteps = ({currentStep}) => {
   return (
     <>
       <h2>Этапы выполнения</h2>
-      <Steps direction="vertical" current={currentStep - 1} size="small">
+      <Steps  direction="vertical"
+              current={currentStep - 1}
+              size="small">
         {renderStep()}
       </Steps>
     </>

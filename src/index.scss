@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'PTRootUIWebRegular';
+	src:url('./fonts/PT\ Root\ UI_Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  font-family: 'PTRootUIWebRegular';
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  background-image: none;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  height: 20px;
+  background-color: #3964a6;
+  border-radius: 3px;
+}
+
+.max_height {
+  height: 90vh;
+}

@@ -10,14 +10,13 @@
     line-height: 16px;
     color: rgba(39, 47, 90, 0.8);
   }
-}
-
-.task_description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: rgba(39, 47, 90, 0.6);
+  &_description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(39, 47, 90, 0.6);
+  }
 }
 
 .center {

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -9,17 +9,40 @@ import { Row, Col } from 'antd'
 import { InfoTask } from '../InfoTask/InfoTask'
 import { UserTaskInfo } from '../UserTaskInfo/UserTaskInfo'
 import { BackButton } from '../BackButton/BackButton'
+import { SHOW_TIME_TOOL_TIP } from '../../const/const'
 import './User.scss'
+
+const classNames = require('classnames')
 
 export const User = () => {
   const { userId } = useParams()
   const dispatch = useDispatch()
   const users = useShallowEqualSelector(state => state.usersState.users)
   const selectedUser = useShallowEqualSelector(state => state.usersState.currentUser)
+  const [showToolTip, setShowToolTip] = useState(false)
+  const [timerId, setTimerId] = useState(null)
 
   useEffect(() => {
     dispatch(setCurrentUser(userId))
   },[userId, dispatch, users])
+
+  useEffect(() => {
+    return timerId ? () => clearTimeout(timerId) : ()=>{}
+  },[timerId])
+
+  const show = useCallback(() => {
+    const isShow = () => {
+      if (!showToolTip) {
+        setShowToolTip(true)
+        setTimerId(setTimeout(() => {
+          setShowToolTip(false)
+          setTimerId(null)
+        }, SHOW_TIME_TOOL_TIP))
+      }
+    }
+    isShow()
+    return () => clearTimeout(timerId)
+  }, [showToolTip, timerId])
 
   return (
     <>
@@ -29,7 +52,10 @@ export const User = () => {
           <h2 className="user_header">{selectedUser.name}</h2>
         </Col>
         <Col span={2} className="user_header-btn">
-          <Link to={`/update/${selectedUser.key}`}>
+          <div className={classNames(showToolTip ? "tool_tip" : "tool_tip-close")}>
+            Редкатировать
+          </div>
+          <Link to={`/update/${selectedUser.key}`} onMouseEnter={show}>
             <EllipsisBtnIcon width='48px' height='48px' />
           </Link>
         </Col>

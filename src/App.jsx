@@ -81,7 +81,7 @@ const App = () => {
         <Menu
           mode="inline"
           defaultSelectedKeys={[selectMenu]}
-          style={{ height: '100%', borderRight: 0 }}
+          style={{ borderRight: 0 }}
           className="menu"
         >
           {getMenuItem()}

@@ -7,21 +7,21 @@
         "task": "Назначить сотрудника для проведения внеплановой проверки",
         "taskDescription": "Не корректные показания",
         "currentStep": 1,
-        "taskTime": 56
+        "taskTime": 56,
+        "taskCreated":"15.07.2020 10:38"
       },
       {
         "taskId": "b8a6",
-        "task": "Назначить сотрудника для проведения внеплановой проверки",
+        "task": "Помаенять датчик",
         "taskDescription": "Не корректные показания",
         "currentStep": 1,
-        "taskTime": 560
+        "taskTime": 10960,
+        "taskCreated":"15.07.2020 10:38"
       }
     ],
     "name": "Константинопольский К.К.",
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
-    "hasTask": true,
-    "hasButton": true,
     "info": [
       {
         "key": "qwep",
@@ -41,19 +41,17 @@
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
         "property": "Контактный телефон",
-        "desctiption": "+7 888 888-88-883"
+        "desctiption": "+7 888 888-88-88"
       },
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -88,13 +86,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
         "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -104,8 +100,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -140,13 +135,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
         "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -156,8 +149,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -191,22 +183,21 @@
     "name": "Ватутина К.К.",
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
-    "hasButton": true,
     "openTasks": [
       {
         "taskId": "b8a6",
-        "task": "Назначить сотрудника для проведения внеплановой проверки",
+        "task": "Проверить ИПУ",
         "taskDescription": "Не корректные показания",
         "currentStep": 1,
-        "taskTime": 560
+        "taskTime": 1200,
+        "taskCreated":"06.07.2020 10:38"
       }
     ],
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -216,8 +207,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -252,13 +242,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -268,8 +256,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -304,13 +291,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -320,8 +305,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -356,13 +340,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -372,8 +354,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -408,13 +389,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -424,8 +403,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -460,13 +438,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -476,8 +452,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -512,13 +487,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -528,8 +501,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -564,13 +536,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -580,8 +550,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -616,13 +585,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -632,8 +599,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -668,13 +634,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -684,8 +648,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",
@@ -720,13 +683,11 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-    "hasButton": true,
     "info": [
       {
         "key": "qwe",
         "property": "Адрес проживания",
-        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35",
-        "bold": true
+        "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
       },
       {
         "key": "qwe1",
@@ -736,8 +697,7 @@
       {
         "key":"qwe2",
         "property": "Электронная почта",
-        "desctiption": "qwerty@yandex.ru",
-        "bold": true
+        "desctiption": "qwerty@yandex.ru"
       },
       {
         "key": "qwe3",

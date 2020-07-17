@@ -3,6 +3,9 @@ import { PersonIcon } from '../icons/PersonIcon'
 import './AuthBlock.scss'
 
 export const AuthBlock = () => {
+  const clickExitBtn = () => {
+    console.log("EXIT")
+  }
   return (
     <>
       <div className="auth">
@@ -15,7 +18,8 @@ export const AuthBlock = () => {
         УК «Лесные озёра»
       </p>
       <div className="block">
-        <button className="exit_auth">
+        <button className="exit_auth"
+                onClick={clickExitBtn}>
           Выход из системы
         </button>
       </div>
