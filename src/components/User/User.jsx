@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
 import useShallowEqualSelector from '../../hooks/useShallowEqualSelector'
 import { setCurrentUser } from '../../store/actions/actionsUsers'
 import { EllipsisBtnIcon } from '../icons/EllipsisBtnIcon'
@@ -21,6 +20,8 @@ export const User = () => {
   const selectedUser = useShallowEqualSelector(state => state.usersState.currentUser)
   const [showToolTip, setShowToolTip] = useState(false)
   const [timerId, setTimerId] = useState(null)
+
+  const history = useHistory()
 
   useEffect(() => {
     dispatch(setCurrentUser(userId))
@@ -44,6 +45,10 @@ export const User = () => {
     return () => clearTimeout(timerId)
   }, [showToolTip, timerId])
 
+  const goUpdate = () => {
+    history.push(`/update/${selectedUser.key}`)
+  }
+
   return (
     <>
       <BackButton/>
@@ -55,9 +60,9 @@ export const User = () => {
           <div className={classNames(showToolTip ? "tool_tip" : "tool_tip-close")}>
             Редактировать
           </div>
-          <Link to={`/update/${selectedUser.key}`} onMouseEnter={show}>
+          <button onClick={goUpdate} onMouseEnter={show}>
             <EllipsisBtnIcon width='48px' height='48px' />
-          </Link>
+          </button>
         </Col>
       </Row>
       <Row className="row row_data">

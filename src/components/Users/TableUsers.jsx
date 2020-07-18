@@ -4,9 +4,11 @@ import './TableUsers.scss'
 import { Table } from 'antd'
 import { AttentionIcon } from '../icons/AttentionIcon'
 import { EllipsisBtnIcon } from '../icons/EllipsisBtnIcon'
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 export const TableUsers = ({users}) => {
+
+  const history = useHistory()
 
   const columns = [
     {
@@ -40,9 +42,9 @@ export const TableUsers = ({users}) => {
       render: (text, record) => {
         if (record.hasButton) {
           return (
-            <Link to={`/user/${record.key}`}>
+            <button onClick={() => history.push(`/user/${record.key}`)}>
               <EllipsisBtnIcon />
-            </Link>
+            </button>
           )
         } else {
           return null
