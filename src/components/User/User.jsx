@@ -46,7 +46,7 @@ export const User = () => {
 
   return (
     <>
-      <BackButton prevPage={"/users"} />
+      <BackButton/>
       <Row className="row">
         <Col span={22}>
           <h2 className="user_header">{selectedUser.name}</h2>

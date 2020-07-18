@@ -65,7 +65,7 @@ export const Tasks = () => {
 
   return (
     <>
-    <BackButton prevPage="/" />
+    <BackButton />
     <h2>{currentTask.task}</h2>
     <Row>
       <Col span={20}>

@@ -108,7 +108,7 @@ export const UpdateUser = () => {
 
   return (
     <>
-      <BackButton prevPage={`/user/${selectedUser.key}`} />
+      <BackButton />
       <h2>{selectedUser.name} Редактирование</h2>
       <Row>
         <Col span={14}>

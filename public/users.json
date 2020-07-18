@@ -88,6 +88,21 @@
     "openTasks": [],
         "info": [
       {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Иванова"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "О."
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Б."
+      },
+      {
         "key": "qwe",
         "property": "Адрес проживания",
         "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
@@ -135,7 +150,22 @@
     "adress": "Нижнекамск, ул. Рифката Гайнуллина, 179 А, кв 46",
     "account": "123456789",
     "openTasks": [],
-        "info": [
+    "info": [
+      {
+        "key": "qwep",
+        "property": "Васильев",
+        "desctiption": "Иванова"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "С."
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Т."
+      },
       {
         "key": "qwe",
         "property": "Адрес проживания",
@@ -195,6 +225,21 @@
     ],
     "info": [
       {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Ватутина"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "К."
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "К."
+      },
+      {
         "key": "qwe",
         "property": "Адрес проживания",
         "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
@@ -243,6 +288,21 @@
     "account": "123456789",
     "openTasks": [],
     "info": [
+      {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Безбородов"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "К."
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "В."
+      },
       {
         "key": "qwe",
         "property": "Адрес проживания",
@@ -293,6 +353,21 @@
     "openTasks": [],
     "info": [
       {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Козырев"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Николай"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Илларионович"
+      },
+      {
         "key": "qwe",
         "property": "Адрес проживания",
         "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
@@ -341,6 +416,21 @@
     "account": "123456789",
     "openTasks": [],
     "info": [
+      {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Герасимов"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Емельян"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Вадимович"
+      },
       {
         "key": "qwe",
         "property": "Адрес проживания",
@@ -391,6 +481,21 @@
     "openTasks": [],
     "info": [
       {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Алексеев"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Жерар"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Анатолиевич"
+      },
+      {
         "key": "qwe",
         "property": "Адрес проживания",
         "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
@@ -439,6 +544,21 @@
     "account": "123456789",
     "openTasks": [],
     "info": [
+      {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Пархоменко"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Афанасий"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Виталиевич"
+      },
       {
         "key": "qwe",
         "property": "Адрес проживания",
@@ -489,6 +609,21 @@
     "openTasks": [],
     "info": [
       {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Кириллов"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Устин"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Виталиевич"
+      },
+      {
         "key": "qwe",
         "property": "Адрес проживания",
         "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
@@ -537,6 +672,21 @@
     "account": "123456789",
     "openTasks": [],
     "info": [
+      {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Червоний"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Платон"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Валерьевич"
+      },
       {
         "key": "qwe",
         "property": "Адрес проживания",
@@ -587,6 +737,21 @@
     "openTasks": [],
     "info": [
       {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Шестаков"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Спартак"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Платонович"
+      },
+      {
         "key": "qwe",
         "property": "Адрес проживания",
         "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
@@ -636,6 +801,21 @@
     "openTasks": [],
     "info": [
       {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Соболев"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Цезарь"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Артёмович"
+      },
+      {
         "key": "qwe",
         "property": "Адрес проживания",
         "desctiption": "Набережные Челны, Машиностроительная, 75, кв.35"
@@ -684,6 +864,21 @@
     "account": "123456789",
     "openTasks": [],
     "info": [
+      {
+        "key": "qwep",
+        "property": "Фамилия",
+        "desctiption": "Гришин"
+      },
+      {
+        "key": "qwep1",
+        "property": "Имя",
+        "desctiption": "Яромир"
+      },
+      {
+        "key": "qwep2",
+        "property": "Отчество",
+        "desctiption": "Викторович"
+      },
       {
         "key": "qwe",
         "property": "Адрес проживания",
