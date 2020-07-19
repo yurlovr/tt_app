@@ -29,7 +29,8 @@ export const usersState = (state = {}, action) => {
                           currentUserInfo.find(u => u.property.toLowerCase() === USER_PROPS.LAST_NAME.toLowerCase()).desctiption
 
       if (state.currentUser.openTasks.length) {
-
+      // Этот блок нужен так как нет бэка, обновление данных пользователя в задаче должен делать бэк и присылать на фронт
+      //начало
         let tasks = getStorage('tasks')
         const setTasks = (tasks) => {
         let currentTasks =  tasks.find(task => task.userId === state.currentUser.key)
@@ -91,6 +92,7 @@ export const usersState = (state = {}, action) => {
       if (action.payload[USER_PROPS.STATUS]) {
         currentUser = { ...currentUser, status: action.payload[USER_PROPS.STATUS]}
       }
+      //конец
 
       const users = state.users.map(u => {
         if (u.key === currentUser.key) {
