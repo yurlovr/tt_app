@@ -58,52 +58,62 @@
     {
       "key": "b8a6a10",
       "property": "Собственник 1",
-      "desctiption": "Константинопольский К.К."
+      "desctiption": "Константинопольский К.К.",
+      "userKey": "b8a6b"
     },
     {
       "key": "b8a6a11",
       "property": "Статус собственника 1",
-      "desctiption": "Передает показания"
+      "desctiption": "Передает показания",
+      "userKey": "b8a6b"
     },
     {
       "key": "b8a6a12",
-      "property": "Юридическое состояние",
-      "desctiption": "Физическое лицо"
+      "property": "Юридическое форма",
+      "desctiption": "Физическое лицо",
+      "userKey": "b8a6b"
     },
     {
       "key": "b8a6a13",
       "property": "Номер ЛС собственника 1",
-      "desctiption": "123456789"
+      "desctiption": "123456789",
+      "userKey": "b8a6b"
     },
     {
       "key": "b8a6a14",
-      "property": "Контактный номер телефона",
-      "desctiption": "+7 999 999-99-99"
+      "property": "Контактный телефон",
+      "desctiption": "+7 999 999-99-99",
+      "userKey": "b8a6b"
     },
     {
       "key": "b8a6a15",
       "property": "Собственник 2",
-      "desctiption": "Иванова К.С."
+      "desctiption": "Иванова К.С.",
+      "userKey": "b8a6b1"
     },
     {
       "key": "b8a6a16",
       "property": "Статус собственника 2",
-      "desctiption": "Передает показания"
+      "desctiption": "Передает показания",
+      "userKey": "b8a6b1"
     },
     {
       "key": "b8a6a17",
       "property": "Юридическое состояние",
-      "desctiption": "Физическое лицо"
+      "desctiption": "Физическое лицо",
+      "userKey": "b8a6b1"
     },
     {
       "key": "b8a6a18",
       "property": "Номер ЛС собственника 2",
-      "desctiption": "123456789"
+      "desctiption": "123456789",
+      "userKey": "b8a6b1"
     },
     {
       "key": "b8a6a19",
       "property": "Контактный номер телефона ",
-      "desctiption": "+7 999 999-99-99"
+      "desctiption": "+7 999 999-99-99",
+      "userKey": "b8a6b1"
     }
   ],
   "comment": []
